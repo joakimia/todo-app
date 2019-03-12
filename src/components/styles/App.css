@@ -1,0 +1,195 @@
+.app {
+  text-align: center;
+  height: 100vh;
+  background-color: #f4f6f8;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #282c34de;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.section-main {
+  display: flex;
+  flex: 1 1 0%;
+  height: 85vh;
+}
+
+.section-left {
+  width: 350px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 4px 0px 8px;
+  border-right: 1px solid lightgrey;
+}
+
+.section-right {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  width: 100%;
+}
+
+.left-top {
+  height: 33%;
+  padding-top: 8px;
+  box-sizing: border-box;
+}
+
+.left-middle {
+  height: 50%;
+}
+
+.left-bottom {
+  height: 21%;
+}
+
+.left-top, .left-middle, .left-bottom {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.main-bottom {
+  flex: 1 1 auto;
+}
+
+.input-field {
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.input-field button {
+  text-transform: capitalize;
+  min-width: 70px;
+}
+
+.droppable-inProgress, .droppable-completed {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  flex: 1 1 50%;
+  align-items: center;
+  overflow-y: auto;
+  height: 80%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+}
+
+.droppable-completed span {
+  text-decoration: line-through;
+}
+
+.list-container {
+    height: 70vh;
+    display: flex;
+}
+
+.list-header {
+  width: 60%;
+}
+
+.list {
+  list-style: decimal;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.list-item {
+  padding: 4px;
+  min-height: 35px;
+  box-sizing: border-box;
+}
+
+.todo-container {
+  display: flex;
+}
+
+.dropdown-container {
+  width: 30px;
+}
+
+.dropdown-container button {
+  border-radius: 2px;
+  background-color: darkgray; 
+  color: black;
+}
+
+.weather-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 90;
+}
+
+.dropdown-wrapper button {
+  min-width: 120px;
+  text-transform: capitalize;
+  border-radius: 2px;
+}
+
+.dropdown-wrapper span {
+  text-decoration: none;
+}
+
+.xkcd-img-wrapper {
+  cursor: pointer;
+}
+
+.xkcd-popup {
+  top: 15vh;
+  left: 10vw;
+  z-index: 100;
+  max-height: 70vh;
+}
+
+.newspanel {
+  height: 20%;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.xkcd-backdrop {
+  position: absolute;
+  top: 0px;
+  left: 0px; 
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  will-change: opacity;
+  transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid grey;
+}
+
+.buttons span {
+  text-decoration: none;
+}
+
+span {
+  max-width: 85%;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
