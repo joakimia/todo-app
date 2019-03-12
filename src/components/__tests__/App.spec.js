@@ -39,23 +39,5 @@ describe('components -> App: ', () => {
     const leftPanel = app().exists(LeftPanel);
     expect(leftPanel).toEqual(true);
   });
-
-  /*
-  it('should call prop setWeather after mounting', () => {
-      const mountedApp = app();
-
-      expect(props.setWeather).toHaveBeenCalled();
-  });
-  it('should call prop setXkcdLink after mounting', () => {
-    const mountedApp = app();
-
-      expect(props.setWeather).toHaveBeenCalled();
-  });
-
-  it('should call prop setNews after mounting', () => {
-    const mountedApp = app();
-
-      expect(props.setWeather).toHaveBeenCalled();
-  });*/
 });
 

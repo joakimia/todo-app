@@ -33,12 +33,6 @@ export default (state = defaultState, action) => {
                 )}
             );
         case MOVE_TODO:
-                console.log(moveItem(
-                    state, 
-                    action.value.sourceArr,
-                    action.value.destArr,
-                    action.value.index, 
-                ));
             return Object.assign(
                 {},
                 state,
